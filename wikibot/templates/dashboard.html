@@ -1,0 +1,84 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block header %}
+<script src="../static/dashboard.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<nav class="navbar navbar-dark bg-dark">
+   <a class="navbar-brand" href="#">Wikimedia Zulip Bot</a>
+</nav>
+<div class="alert alert-danger text-center" id="my-alert" role="alert">
+   default
+</div>
+<div class="main-page">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-2 my-sidebar">
+            <ul class="list-group list-group-flush">
+               <li class="list-group-item my-list" id="alpha">Alpha <b>α</b></li>
+               <li class="list-group-item my-list" id="beta">Beta <b>β</b></li>
+               <li class="list-group-item my-list">Statistics</li>
+               <li class="list-group-item my-list">Docs</li>
+            </ul>
+         </div>
+         <div class="col-10">
+            <div class="container-fluid">
+               <div id="singlepagehead">
+                  <div id="category-list"></div>
+                  <div id="singlepage" category=""></div>
+               </div>
+               <!-- Modal-1 -->
+               <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLongTitle">Delete Entry</h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+                        <div class="modal-body">
+                           Are you sure ?
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                           <button type="button" class="btn btn-danger" id="delete-entry">Delete</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!------------------->
+               <!-- Modal-2 -->
+               <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLongTitle"><span id="category-title">wikibot</span></h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+                        <div class="modal-body">
+                           <span id="category-message">wikibot</span><br><br>
+                           <input type="text" id="category-input" class="form-control">
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                           <button type="button" name="action" id="category-action">wikibot</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!------------------->
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock %}

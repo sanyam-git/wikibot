@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Something Happened
+{% endblock %}
+
+{% block content %}
+<div class="main-page">
+	<h1>{{error_code}}</h1>
+	<h3>Errors Happen ! But the show must go on. Go Back to <a href="{{url_for('dashboard.main') }}">homepage</a>.</h3>
+</div>
+{% endblock %}

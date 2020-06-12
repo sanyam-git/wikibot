@@ -1,0 +1,62 @@
+.main-page {
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.beta-row {
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+.beta-keyword {
+	font-size: 20px;
+	text-align: center;
+}
+.my-list {
+	font-size: 20px;
+}
+.my-category {
+	width: 100px;
+	margin: 4px;
+}
+.my-row {
+	margin: 20px;
+}
+.my-response {
+	width: 100%;
+	color: #303030;
+}
+.row-buttons{
+	width: 85px;
+	margin: 2px;
+}
+#my-alert{
+	visibility: hidden;
+	margin-bottom: 0px;
+}
+#new-entry{
+	margin-top: 10px;
+	width: 100px;
+}
+#new-row-template {
+	display: none;
+}
+#singlepage{
+	margin-top: 20px;
+}
+
+/* overwriting the default ones from library*/
+
+.bootstrap-tagsinput {
+	width: 100%;
+	height: 100%;
+	line-height: 2;
+}
+
+.bootstrap-tagsinput .tag {
+	font-size: 17px;
+	padding: 5px;
+	margin: 2px;
+	background-color: #E8E8E8;
+	font-weight: lighter;
+	color: #303030;
+	border-radius: 9px;
+}
