@@ -1,5 +1,5 @@
 alembic==1.4.1
-requests==2.18.4
+requests==2.20.0
 Flask_Script==2.0.6
 SQLAlchemy==1.2.19
 Flask_Migrate==2.5.3
